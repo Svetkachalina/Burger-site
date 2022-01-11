@@ -10,6 +10,9 @@ body {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
      font-family: 'Open Sans', sans-serif;
      display: flex;
@@ -30,7 +33,7 @@ body {
     padding-left: 0;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 45px;
 }
 .header-nav a {
     text-decoration: none;
@@ -40,6 +43,9 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #443737;
+}
+.header-nav a:hover {
+    color: #F37335;
 }
 .header-nav a.active::after {
     background-color: #FFC725;
@@ -52,6 +58,9 @@ body {
     background-color: transparent;
     display: block;
 }
+ul.header-nav {
+    margin-right: 100px;
+}
 .button {
     display: flex;
     align-items: center;
@@ -59,6 +68,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-count {
     font-size: 13px;
@@ -88,7 +98,8 @@ body {
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center center;
-    padding: 142px 0;
+    padding-top: 120px;
+    padding-bottom: 114px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -96,7 +107,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 9px;
 }
 .breadcrumbs a {
     color: #DEDEDE;
@@ -104,10 +115,17 @@ body {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content: "/";
     position: relative;
-    left: -7px;
+    left: -6px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before {
     display: none;
@@ -115,14 +133,69 @@ body {
 .title {
     font-size: 79px;
     font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: -5px;
+    margin-bottom: 20px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box {
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 115px;
+    background-position: center center;
+    color: #fff;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    position: relative;
+}
+.banner-discount {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    color: #fff;
+    background-color: #F37335;
+    text-align: center;
+    border-radius: 15px;
+}
+h2.banner-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 100px;
+    margin-top: 23px;
+}
+.banner-text {
+    margin-left: 100px;
+    margin-top: -30px;
+    color: #FAF9F9;
+    font-size: 15px;
+    max-width: 307px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.banner-link {
+    text-decoration: none;
+    color: #1E2F40;
+    text-transform: uppercase;
+    background: #FBB731;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 25px;
+    margin-left: 100px;
 }
