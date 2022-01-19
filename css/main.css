@@ -98,6 +98,7 @@ header {
     background-image: url(../img/bg.jpg);
     background-size: cover;
     background-position: center center; 
+    margin-bottom: 142px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -149,8 +150,8 @@ header {
     background-image: url(../img/banner1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 142px 0 52px 0;
-    background-position: center center;
+    margin: 0 0 52px 0;
+    background-position: 0 center;
     color: #fff;
     padding: 110px 100px 120px 100px;
     position: relative;
@@ -214,7 +215,7 @@ header {
     font-size: 44px;
     text-transform: uppercase;
     color: #1B2A49;
-    margin-top: 53px;
+    margin-top: 33px;
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -232,7 +233,7 @@ header {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 45px 20px;
     text-align: center;
 }
 .menu-grid-cover {
@@ -268,7 +269,7 @@ header {
     border: none;
     padding: 10px 35px;
     border-radius: 7px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     transition: 0.2s;
 }
 .menu-grid-price-btn:hover {
@@ -299,12 +300,12 @@ header {
     font-weight: 700;
     font-size: 44px;
     color: #1B2A49;
-    margin: 70px 0 35px 0;
+    margin: 105px 0 35px 0;
 }
 .footer {
     background: #1E2F40;
     color: #fff;
-    margin-top: 110px;
+    margin-top: 140px;
 }
 .footer-box {
     display: flex;
@@ -570,4 +571,48 @@ ul {
 }
 .tel li {
     margin-bottom: 12px;
+}
+
+ /* Responsive */
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .banner-discount {
+        position: absolute;
+        left: 40px;
+    }
+    .banner-title {
+        margin: 35px 0 0 0;
+    }
+    .menu {
+        padding-top: 0;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+    .menu-addition-title {
+        margin: 92px 0 35px 0;
+    }
+    
 }
