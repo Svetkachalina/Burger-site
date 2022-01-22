@@ -519,6 +519,22 @@ header {
     margin-bottom: 10px;
     margin-top: 0;
 }
+
+/* Modal */
+
+.burger {
+    background-image: url(../img/burger-menu.svg);
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 34px;
+    height: 22px;
+    left: 17px;
+    top: 36px;
+
+}
 .footer-index {
     background: #1E2F40;
     color: #fff;
@@ -579,6 +595,11 @@ ul {
          display: none;
      }
  }
+ @media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+ }
 
 @media (max-width: 1000px) {
     .container {
@@ -591,6 +612,7 @@ ul {
     }
     .header-nav {
         gap: 22px;
+        
     }
     .header-item {
         flex-basis: 75.5%;
@@ -618,7 +640,11 @@ ul {
     }
     .menu-other {
         overflow: hidden;
-        height: 558px;
+        height: 648px;
+    }
+  
+    .menu-header {
+        margin-top: 54px;
     }
     .menu-other .menu-grid {
         display: flex;
@@ -634,10 +660,171 @@ ul {
     .menu-other .menu-grid-cover img {
         height: 320px;
     }
-     
     .footer-tel {
     display: none;
     }
     .footer-list + .footer-list-tel {
     display: block;
     }
+}
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
+   .header {
+       gap: 21px;
+   }
+   .menu-other .container {
+    padding-right: 0;
+    }
+    .button-up.visible {
+        display: none;
+    }
+}
+
+@media (max-width: 567px) {
+    .burger {
+        top: 27px;
+    }
+    .header {
+        padding-top: 19px;
+        padding-bottom: 19px;
+        margin-right: 15px;
+    }
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        margin-left: 40px;
+    }
+    .bg {
+        text-align: center;
+        color: #fff;
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-position: 40% center;
+        margin-bottom: 33px;
+       padding: 57px 0;
+    }
+    .breadcrumbs {
+        padding-top: 0;
+        font-size: 14px;
+    }
+    .title {
+        font-size: 38px;
+        margin-top: 28px;
+        margin-bottom: 10px;
+    }
+    .description {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+   
+    .banner-box {
+        background-position: 8% center;
+        padding: 15px 10px 55px 10px;
+    }
+       .banner-discount {
+        left: 14px;
+        top: 35px;
+        padding: 6px 24px;
+    }
+    .banner-title {
+        margin: 55px 0 0 5px;
+    }
+    .banner-text {
+        margin: 16px 0 56px 5px;
+        line-height: 1.6;
+    }
+    .banner-link {
+        padding: 18px 34px;
+        margin-left: 5px;
+    }
+    .menu-title {
+        font-size: 27px;
+        margin: 8px 0 34px 15px;
+    }
+    .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+        padding: 13px 18px 13px 14px;
+        background-position: 91%; 
+    }
+    .menu-grid { 
+        gap: 25px 10px;
+    }
+    .menu-grid-cover {
+        height: 56vw;
+        margin-bottom: 10px;
+      
+    }
+    .menu-grid-cover img {
+        height: 100%;
+    }
+  
+    .menu-grid-title {
+        font-weight: 700;
+        font-size: 15px;
+        margin: 13px 0 0;
+    }
+    .menu-grid-price {
+        font-size: 16px;
+        margin: 5px 0 9px;
+    }
+    .menu-grid-btn {
+        padding: 10px 21px;
+    }
+   
+    .menu-other .menu-grid {
+        padding-bottom: 14vw;
+    }
+    .menu-other .menu-grid-cover {
+        height: 46vw;
+    }
+    
+    .menu-other .menu-grid-cover img {
+        height: 100%;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 38vw;
+    }
+    .footer {
+        margin-top: 0;
+    }
+}
+@media (max-width: 413px) {
+    .banner-box {
+        background-position: 30% center;
+    }
+        
+}
+@media (max-width: 360px) {
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+        margin-left: 40px;
+
+    }
+    .menu-grid-title {
+        font-size: 13px;
+    }
+}
+@media (max-width: 320px) {
+    .menu-other .menu-grid {
+        padding-bottom: 14vw;
+    }
+    .menu-other {
+        height: 150vw;
+    }
+    
+    .menu-other .menu-grid-cover img {
+        height: 100%;
+    }
+    .banner-box {
+        background-position: 20% center;
+    }
+    .banner-text {
+        max-width: 235px;
+        margin: 16px 0 34px 5px;
+    }
+}
