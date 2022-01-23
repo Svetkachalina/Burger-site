@@ -1,3 +1,5 @@
+/* Style MENU */
+
 body {
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Nunito Sans', sans-serif;
@@ -211,11 +213,14 @@ header {
     justify-content: space-between;
 }
 .menu-title {
-    font-weight: bold700;
+    font-weight: 700;
     font-size: 44px;
     text-transform: uppercase;
     color: #1B2A49;
     margin-top: 33px;
+}
+.menu-other .menu-title {
+    margin-top: 87px;
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -249,7 +254,7 @@ header {
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 100%;
-    height: 430px;
+    height: 100%;
 }
 .menu-grid-title { 
     font-weight: 600;
@@ -306,12 +311,15 @@ header {
     background: #1E2F40;
     color: #fff;
     margin-top: 140px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .footer-box {
     display: flex;
     justify-content: space-between;
-    padding: 119px 0 95px 0;
+    padding: 118px 0 94px 0;
     margin-top: 0;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
@@ -533,8 +541,41 @@ header {
     height: 22px;
     left: 17px;
     top: 36px;
+}
+.burger-close {
+    width: 22px;
+    height: 22px;background-color: transparent;
+    background-image: url(../img/close-modal.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+#modal {
+   
+    max-width: 500px;
+    background-color: cornsilk;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    transition: 0.5s;
+    padding: 40px 30px;
+    box-sizing:border-box;
 
 }
+#modal .header-nav {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
 .footer-index {
     background: #1E2F40;
     color: #fff;
@@ -590,16 +631,15 @@ ul {
 }
 
  /* Responsive */
+
  @media (min-width: 1001px) {
-     .footer-list + .footer-list-tel {
-         display: none;
-     }
- }
- @media (min-width: 766px) {
-    .header-burger {
+    .footer-list + .footer-list-tel {
         display: none;
     }
- }
+    .menu-other .menu-title {
+        margin-top: 72px;
+    }
+}
 
 @media (max-width: 1000px) {
     .container {
@@ -612,7 +652,6 @@ ul {
     }
     .header-nav {
         gap: 22px;
-        
     }
     .header-item {
         flex-basis: 75.5%;
@@ -640,9 +679,9 @@ ul {
     }
     .menu-other {
         overflow: hidden;
-        height: 648px;
+        height: 100%;
     }
-  
+    
     .menu-header {
         margin-top: 54px;
     }
@@ -654,7 +693,7 @@ ul {
         padding-bottom: 50px;
     }
     .menu-other .menu-grid-item {
-        flex: 0 0 281px;
+        flex: 0 0 35vw;
     }
     .menu-other .menu-grid-cover,
     .menu-other .menu-grid-cover img {
@@ -667,6 +706,12 @@ ul {
     display: block;
     }
 }
+@media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+}
+
 @media (max-width: 765px) {
     nav {
         display: none;
@@ -674,15 +719,27 @@ ul {
    .header {
        gap: 21px;
    }
+   .container {
+       margin: 0 15px 0 15px;
+   }
    .menu-other .container {
-    padding-right: 0;
+        padding-right: 0;
+    }
+    .menu-other .menu-title {
+        margin-top: 38px;
     }
     .button-up.visible {
         display: none;
     }
+    .footer-box {
+        padding-top: 68px;
+    }
+    .footer {
+        margin-top: 67px;
+    }
 }
-
 @media (max-width: 567px) {
+    
     .burger {
         top: 27px;
     }
@@ -703,7 +760,7 @@ ul {
         background-size: cover;
         background-position: 40% center;
         margin-bottom: 33px;
-       padding: 57px 0;
+        padding: 57px 0;
     }
     .breadcrumbs {
         padding-top: 0;
@@ -718,7 +775,6 @@ ul {
         font-size: 12px;
         padding-bottom: 0;
     }
-   
     .banner-box {
         background-position: 8% center;
         padding: 15px 10px 55px 10px;
@@ -732,7 +788,7 @@ ul {
         margin: 55px 0 0 5px;
     }
     .banner-text {
-        margin: 16px 0 56px 5px;
+        margin: 16px 0 34px 5px;
         line-height: 1.6;
     }
     .banner-link {
@@ -753,14 +809,12 @@ ul {
         gap: 25px 10px;
     }
     .menu-grid-cover {
-        height: 56vw;
+        height: 51vw;
         margin-bottom: 10px;
-      
     }
     .menu-grid-cover img {
         height: 100%;
     }
-  
     .menu-grid-title {
         font-weight: 700;
         font-size: 15px;
@@ -773,29 +827,62 @@ ul {
     .menu-grid-btn {
         padding: 10px 21px;
     }
-   
+    .menu-other .container {
+        padding-right: 0;
+    }
+    .menu-other .menu-header {
+        margin-top: 25px;
+    }
     .menu-other .menu-grid {
         padding-bottom: 14vw;
     }
     .menu-other .menu-grid-cover {
-        height: 46vw;
+        height: 50vw;
     }
-    
     .menu-other .menu-grid-cover img {
         height: 100%;
     }
     .menu-other .menu-grid-item {
         flex: 0 0 38vw;
     }
+    
     .footer {
-        margin-top: 0;
+        margin-top: 28px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-tel {
+        display: block;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "logo tel" "link link" "info info";
+        gap: 0;
+    }
+    .footer-item:nth-child(1) {
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2) {
+        grid-area: link;
+    }
+    .footer-item:nth-child(3) {
+        grid-area: info;
+    }
+    .footer-tel {
+        grid-area: tel;
+        text-align: right;
     }
 }
 @media (max-width: 413px) {
-    .banner-box {
-        background-position: 30% center;
+  
+    .banner-text {
+        margin-top: 5px;
+        max-width: 241px;   
     }
-        
 }
 @media (max-width: 360px) {
     .header-logo {
@@ -803,20 +890,21 @@ ul {
         height: 37px;
         background-size: contain;
         margin-left: 40px;
-
     }
     .menu-grid-title {
         font-size: 13px;
     }
 }
 @media (max-width: 320px) {
-    .menu-other .menu-grid {
-        padding-bottom: 14vw;
+    .banner-box {
+        background-position: 25% center;
     }
     .menu-other {
         height: 150vw;
     }
-    
+    .menu-other .menu-grid {
+        padding-bottom: 14vw;
+    }
     .menu-other .menu-grid-cover img {
         height: 100%;
     }
@@ -825,6 +913,7 @@ ul {
     }
     .banner-text {
         max-width: 235px;
-        margin: 16px 0 34px 5px;
+        margin: 16px 0 33px 5px;
     }
+    
 }
