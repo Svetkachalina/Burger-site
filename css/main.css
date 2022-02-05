@@ -292,7 +292,7 @@ header {
     background-image: url("../img/cart-menu.svg");
     width: 18px;
     height: 18px;
-    position: absolute;
+    display: inline-block;
     margin-left: -10px;  
 }
 .menu-grid-text {
