@@ -464,7 +464,8 @@ header {
     .menu-other .menu-grid {
         display: flex;
         width: auto;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
+        overflow-x: hidden;
         overflow-y: hidden;
     }
     .menu-grid::-webkit-scrollbar {
@@ -523,6 +524,9 @@ header {
 @media (max-width: 605px) {
     .footer-menu {
         margin-top: 50px;
+    }
+    .menu-grid-title {
+        font-size: 28px;
     }
 }
 @media (max-width: 567px) {
@@ -671,18 +675,20 @@ header {
     .banner-text {
         max-width: 241px;   
     }
+    .menu-grid-title {
+        font-size: 20px;
+    }
 }
-@media (max-width: 360px) {
+@media (max-width: 365px) {
     .header-logo {
         width: 116px;
         height: 37px;
         background-size: contain; 
     }
     .menu-grid-title {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
-
 @media (max-width: 321px) {
     
     .banner-box {
@@ -695,7 +701,9 @@ header {
     .menu-grid-cover {
         height: 58vw;
     }
- 
+    .menu-grid-title {
+        font-size: 15px;
+    }
     .banner-box {
         background-position: 20% center;
     }
