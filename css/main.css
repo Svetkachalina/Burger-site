@@ -822,14 +822,14 @@ header {
     position: relative;
 }
 .visual-bg {
-    width: 432px;
+    width: 52vh;
     height: 100%;
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
-    width: 140%;
+    width: 80vh;
     position: absolute;
-    right: -168px;
+    right: -81px;
 }
 .promo {
     padding-top: 184px;
@@ -955,22 +955,71 @@ ul {
 
 /* Responsive INDEX */
 
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
     .wrapper {
         max-width: 1000px;
     }
     .content {
         padding: 60px 68px 100px;
     }
+    .visual-bg {
+        width: 40vh;
+    }
     .main img {
-        width: 200%;
-        right: -320px;
+        width: 64vh;
+        right: -90px;
+        top: 80px;
     }
     .footer-box {
         gap: 70px;
     }
 }
-
+@media (max-width: 1310px) {
+    .visual-bg {
+        width: 37vh;
+    }
+    .main img {
+        width: 61vh;
+        right: -87px;
+        top: 80px;
+    }
+}
+@media (max-width: 1255px) {
+    .visual-bg {
+        width: 36vh;
+    }
+    .main img {
+        width: 54vh;
+        right: -54px;
+        top: 80px;
+    }
+}
+@media (max-width: 1170px) {
+    .visual-bg {
+        width: 30vh;
+    }
+    .main img {
+        width: 50vh;
+        right: -60px;
+        top: 100px;
+    }
+}
+@media (max-width: 1138px) {
+    .content-title {
+        font-size: 100px;
+    }
+    .content-text {
+        font-size: 18px;
+    }
+    .visual-bg {
+        width: 37vh;
+    }
+    .main img {
+        width: 56vh;
+        right: -40px;
+        top: 100px;
+    }
+}
 @media (max-width: 1112px) {
     .content {
         padding: 8px 69px 116px 0px;
@@ -987,9 +1036,9 @@ ul {
         margin-bottom: 20px;
     }
     .main img {
-        width: 150%;
-        right: -100px;
-        top: -50px;
+        width: 57vh;
+        right: -4px;
+        top: -6px;
     }
     .promo {
         padding: 106px 43px 9px 14px;    
@@ -1030,9 +1079,15 @@ ul {
     }
 }
 @media (max-width: 1000px) {
+    .visual-bg {
+        width: 32vh;
+    }
     .main img {
-        width: 160%;
-        right: -124px;
+        width: 55vh;
+        right: 22px;
+    }
+    .content-text {
+        max-width: 400px;
     }
     .footer-box {
         padding: 68px 0 65px 0;
@@ -1062,12 +1117,21 @@ ul {
         margin-bottom: 30px;
     }
     .main img {
-        width: 130%;
-        right: -34px;
-        top: -12px;
+        right: 16px;
+        top: 6px;
     }
 }
-@media (max-width: 860px) {
+@media (max-width: 929px) {
+    .visual-bg {
+        width: 29vh;
+    }
+    .main img {
+        width: 51vh;
+        right: 7px;
+        top: 130px;
+    }
+}
+@media (max-width: 863px) {
     .wrapper {
         padding: 0;
     }
@@ -1094,6 +1158,13 @@ ul {
         margin-top: 25px;
     }
 }
+@media (max-width: 830px) {
+    .main img {
+        width: 48vh;
+        right: 7px;
+        top: 200px;
+    }
+}
 @media (max-width: 800px) {
     .wrapper {
         padding: 0 15px 0 15px;
@@ -1116,10 +1187,8 @@ ul {
     .content-link {
         padding: 19px 39px;
     }
-    .main img {
-        width: 130%;
-        right: 36px;
-        top: 84px;
+    .visual-bg {
+        width: 23vh;
     }
     .promo {
         padding: 50px 4px;
@@ -1152,20 +1221,38 @@ ul {
         margin-top: 0;
     }
 }
-
+@media (max-width: 756px) {
+    .visual-bg {
+        width: 17vh;
+    }
+    .main img {
+        width: 43vh;
+        right: 26px;
+        top: 248px;
+    }
+}
 @media (max-width: 743px) {
     .content-text {
         max-width: 352px;
     }
 }
 @media (max-width: 710px) {
-    .main img {
-        width: 120%;
-        right: 78px;
-        top: 106px;
-    }
+   
     .footer-box {
          padding: 67px 0 42px 0;
+    }
+}
+@media (max-width: 703px) {
+    .visual-bg {
+        width: 15vh;
+    }
+    .main img {
+        top: 263px;
+    }
+}
+@media (max-width: 686px) {
+    .visual-bg {
+        display: none;
     }
 }
 @media (max-width: 645px) {
@@ -1184,11 +1271,7 @@ ul {
         max-width: 352px;
         margin-bottom: 31px;
     }
-    .main img {
-        width: 120%;
-        right: 197px;
-        top: 144px;
-    }
+  
     .footer-box {
         gap: 18px;
     }
@@ -1201,9 +1284,7 @@ ul {
         font-size: 70px;
     }
     .main img {
-        width: 70%;
-        right: -42px;
-        top: -310px;
+        top: -289px;
     }
     .promo {
         padding: 60px 70px;
@@ -1221,6 +1302,11 @@ ul {
         max-width: 300px;
     }
   
+}
+@media (max-width: 570px) {
+    .main img {
+        right: -6px;
+    }
 }
 @media (max-width: 556px) {
     .wrapper {
@@ -1241,7 +1327,9 @@ ul {
     .content-link {
         margin-bottom: 40px;
     }
-   
+    .main img {
+        top: -273px;
+    }
     .promo {
         padding: 46px 24px;
         margin-bottom: 0;
@@ -1297,15 +1385,16 @@ ul {
         /* text-align: right; */
     }
 }
-
+@media (max-width: 473px) {
+    .main img {
+        width: 34vh;
+        right: -3px;
+        top: -246px;
+    }
+}
 @media (max-width: 445px) {
     .content-text {
         margin-bottom: 10px;
-    }
-    .main img {
-        width: 65%;
-        right: 37px;
-        top: -216px;
     }
     .footer-box {
         padding-top: 60px;
@@ -1324,6 +1413,11 @@ ul {
     .content-link {
         margin-bottom: 22px;
     }
+    .main img {
+        width: 31vh;
+        right: 3px;
+        top: -221px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1334,8 +1428,9 @@ ul {
         margin-bottom: 33px;
     }
     .main img {
-        width: 70%;
-        right: -12px;
+        width: 23vh;
+        right: -4px;
+        top: -176px;
     }
     .promo-left {
         padding-bottom: 31px;
@@ -1345,10 +1440,7 @@ ul {
     }
 }
 @media (max-width: 350px) {
-    .main img {
-        width: 72%;
-        right: -43px;
-    }
+   
     .promo {
         padding: 48px 13px;
     }
@@ -1359,8 +1451,8 @@ ul {
         padding-left: 10px;
     }
     .main img {
-        width: 98%;
-        right: -100px;
+        /* width: 98%;
+        right: -100px; */
     }
     .promo {
         padding: 46px 2px 45px 2px;
