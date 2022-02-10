@@ -1,9 +1,6 @@
-/* Style MENU */
-
 body {
     font-family: 'Nunito Sans', sans-serif;
     border: 0 none;
-
 }
 .container {
     max-width: 1180px;
@@ -217,7 +214,6 @@ header {
     text-transform: uppercase;
     color: #1B2A49;
 }
-
 .menu-select {
     border: 1px solid #DEDEDE;
     padding: 13px 30px;
@@ -279,8 +275,6 @@ header {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    /* gap: 9px; */
-    
 }
 .menu-grid-price-btn:hover {
     background-color: #F37335;
@@ -458,13 +452,10 @@ header {
     }
     .menu-other {
         overflow: hidden;
-        /* height: 100%; */
-        
     }
     .menu-other .menu-grid {
         display: flex;
         width: auto;
-        /* overflow-x: scroll; */
         overflow-x: hidden;
         overflow-y: hidden;
     }
@@ -515,7 +506,6 @@ header {
         display: none;
     }
 }
-
 @media (max-width: 622px) {
     .footer-box {
         gap: 18px;
@@ -690,7 +680,6 @@ header {
     }
 }
 @media (max-width: 321px) {
-    
     .banner-box {
         background-position: 25% center;
         margin-bottom: 42px;
@@ -711,7 +700,6 @@ header {
         max-width: 235px;
         margin: 16px 0 33px 5px;
     }
-   
 }
 
 /* Modal */
@@ -951,7 +939,6 @@ ul {
 .tel li {
     margin-bottom: 12px;
 }
-
 
 /* Responsive INDEX */
 
