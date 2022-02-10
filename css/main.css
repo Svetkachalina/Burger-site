@@ -655,7 +655,9 @@ header {
     .menu-grid-price-btn {
         padding: 10px 25px;
    }
-   
+   .menu-grid-title {
+        font-size: 16px;
+}
     .menu-grid-text {
         padding-left: 4px;
     }
@@ -665,18 +667,16 @@ header {
     .banner-text {
         max-width: 241px;   
     }
-    .menu-grid-title {
-        font-size: 20px;
-    }
+   
 }
-@media (max-width: 365px) {
+@media (max-width: 375px) {
     .header-logo {
         width: 116px;
         height: 37px;
         background-size: contain; 
     }
     .menu-grid-title {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 @media (max-width: 321px) {
@@ -690,9 +690,7 @@ header {
     .menu-grid-cover {
         height: 58vw;
     }
-    .menu-grid-title {
-        font-size: 15px;
-    }
+   
     .banner-box {
         background-position: 20% center;
     }
